@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: datafabric-mysql-svc
+  labels:
+    app: datafabric-mysql
+spec:
+  ports:
+    - port: {{ .Values.mysql.port }}
+      targetPort: {{ .Values.mysql.port }}
+  selector:
+    app: datafabric-mysql
