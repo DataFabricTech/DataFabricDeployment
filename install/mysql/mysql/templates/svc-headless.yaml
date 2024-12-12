@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: datafabric-mysql-svc-headless
+spec:
+  selector:
+    app: datafabric-mysql
+  clusterIP: None
+
