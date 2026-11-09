@@ -3,7 +3,7 @@ mysql:
   password: root
   database: datafabric
   port: 3306
-  image: 192.168.179.18/datafabric/datafabric_mysql:20241212_v1
+  image: <컨테이너 레지스트리>/datafabric/datafabric_mysql:20241212_v1
   resources:
     requests:
       cpu: 2
